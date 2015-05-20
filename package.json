@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "description": "A starter project for TypeScript libraries",
   "main": "index.js",
+  "bin": {
+    "tsfind": "./tsfind"
+  },
   "files": [
     "tsfind.d.ts",
     "**/*.js",
@@ -39,13 +42,15 @@
     "url": "https://github.com/Asana/tsfind/issues"
   },
   "homepage": "https://github.com/Asana/tsfind",
+  "dependencies": {
+    "glob": "^5.0.6",
+    "minimist": "^1.1.1"
+  },
   "devDependencies": {
     "chai": "^2.3.0",
     "coveralls": "^2.11.2",
     "dts-generator": "^1.4.1",
-    "glob": "^5.0.6",
     "istanbul": "^0.3.14",
-    "minimist": "^1.1.1",
     "mocha": "^2.2.4",
     "sinon": "^1.14.1",
     "source-map-support": "^0.2.10",

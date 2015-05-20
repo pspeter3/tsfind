@@ -8,6 +8,7 @@
     ],
     "files": [
         "./src/index.ts",
+        "./src/tsfind.ts",
         "./test/index_test.ts",
         "./typings/chai/chai.d.ts",
         "./typings/glob/glob.d.ts",

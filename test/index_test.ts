@@ -40,6 +40,7 @@ suite("Index", () => {
             }
             assert.deepEqual({
                 "./src/index.ts": true,
+                "./src/tsfind.ts": true,
                 "./test/index_test.ts": true
             }, files);
             done();
