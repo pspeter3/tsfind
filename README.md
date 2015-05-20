@@ -52,8 +52,8 @@ npm test
 [npm-url]: https://www.npmjs.org/package/tsfind
 [npm-image]: http://img.shields.io/npm/v/tsfind.svg?style=flat-square
 
-[travis-url]: http://travis-ci.org/Asana/tsfind
-[travis-image]: http://img.shields.io/travis/Asana/tsfind.svg?style=flat-square
+[travis-url]: http://travis-ci.org/pspeter3/tsfind
+[travis-image]: http://img.shields.io/travis/pspeter3/tsfind.svg?style=flat-square
 
-[coveralls-url]: https://coveralls.io/r/Asana/tsfind
-[coveralls-image]: https://img.shields.io/coveralls/Asana/tsfind/master.svg?style=flat-square
+[coveralls-url]: https://coveralls.io/r/pspeter3/tsfind
+[coveralls-image]: https://img.shields.io/coveralls/pspeter3/tsfind/master.svg?style=flat-square
