@@ -1,10 +1,10 @@
 {
-  "name": "tsproject",
+  "name": "tsfind",
   "version": "0.0.1",
   "description": "A starter project for TypeScript libraries",
   "main": "index.js",
   "files": [
-    "tsproject.d.ts",
+    "tsfind.d.ts",
     "**/*.js",
     "!**/*_test.js",
     "!build/**/*.js",
@@ -28,7 +28,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Asana/tsproject.git"
+    "url": "https://github.com/Asana/tsfind.git"
   },
   "keywords": [
     "typescript"
@@ -36,9 +36,9 @@
   "author": "Asana",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Asana/tsproject/issues"
+    "url": "https://github.com/Asana/tsfind/issues"
   },
-  "homepage": "https://github.com/Asana/tsproject",
+  "homepage": "https://github.com/Asana/tsfind",
   "devDependencies": {
     "chai": "^2.3.0",
     "coveralls": "^2.11.2",
@@ -54,6 +54,6 @@
     "typescript": "^1.4.1"
   },
   "typescript": {
-    "definition": "tsproject.d.ts"
+    "definition": "tsfind.d.ts"
   }
 }

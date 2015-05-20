@@ -1,4 +1,4 @@
-# tsproject
+# tsfind
 
 [![NPM Version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage][coveralls-image]][coveralls-url]
 
@@ -8,7 +8,7 @@ Maintain a tsconfig file
 
 This repository is meant to be forked and kept as another git remote so future
 changes can be merged in. The developer should replace all instances of
-`tsproject` with their package name and change the appropriate fields
+`tsfind` with their package name and change the appropriate fields
 in the `package.json`.
 
 ## Commands
@@ -42,18 +42,18 @@ Feel free to fork and submit pull requests for the configuration. For a sanity
 check:
 
 ```sh
-git clone git@github.com:Asana/tsproject.git
-cd tsproject
+git clone git@github.com:Asana/tsfind.git
+cd tsfind
 npm install
 npm run typings
 npm test
 ```
 
-[npm-url]: https://www.npmjs.org/package/tsproject
-[npm-image]: http://img.shields.io/npm/v/tsproject.svg?style=flat-square
+[npm-url]: https://www.npmjs.org/package/tsfind
+[npm-image]: http://img.shields.io/npm/v/tsfind.svg?style=flat-square
 
-[travis-url]: http://travis-ci.org/Asana/tsproject
-[travis-image]: http://img.shields.io/travis/Asana/tsproject.svg?style=flat-square
+[travis-url]: http://travis-ci.org/Asana/tsfind
+[travis-image]: http://img.shields.io/travis/Asana/tsfind.svg?style=flat-square
 
-[coveralls-url]: https://coveralls.io/r/Asana/tsproject
-[coveralls-image]: https://img.shields.io/coveralls/Asana/tsproject/master.svg?style=flat-square
+[coveralls-url]: https://coveralls.io/r/Asana/tsfind
+[coveralls-image]: https://img.shields.io/coveralls/Asana/tsfind/master.svg?style=flat-square
