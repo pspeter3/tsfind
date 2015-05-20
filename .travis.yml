@@ -1,28 +1,26 @@
-# Cache node_modules and typings for future runs. This does make the builds
-# sometimes fail because of a bad cache but usually this is a huge test
-# performance win.
 cache:
   directories:
-    - node_modules
-    - typings
-# Set up environment variables for tests
+  - node_modules
+  - typings
 env:
   global:
-    # Use a better mocha reporter for Travis
-    - MOCHA_REPORTER=spec
-# Use the Travis Docker build system which is faster
+  - MOCHA_REPORTER=spec
 sudo: false
-# Specify to use node
 language: node_js
-# Specify the node versions to run on
 node_js:
-  - "0.12"
-# Make sure to have typings before the test
+- '0.12'
 before_script:
-  - npm run typings
-# Make sure to bundle the application before any deploys
+- npm run typings
 before_deploy:
-  - npm run bundle
-# Report code coverage to coveralls after successful test runs
+- npm run bundle
 after_success:
-  - npm run coveralls
+- npm run coveralls
+deploy:
+  provider: npm
+  email: pspeter333@gmail.com
+  api_key:
+    secure: ZJGW64rv3+HJV450lvux1dYINUvpm1PzyMIf8moGyPCNlC4DIywFzrHWvTFK5PUyI3M9U60U1ETgjI+7xE1iuXMA2yGduDPCrjt1pM3PZIvjWx28SaMDDTNEyZJZC4IdGGEM/pURohKuEndQ5vSMXa+lYwEVIhXdFiFMZJb6PN5pMcj6VTxRx+Q5w38iAda3uMbFaI+L9OK/NvT9sn7mpTqQkM4V088JsYZ1ZkhlPcQorBQkFtbmvHs7C8QGGvknDVPSuoGegVwcfthLSCKrgZZerbWIAhm7nMmrB4jfoY5hOZ8kZ3qrz5uj713wg60apkMfccxtNNsgtP8PmmtdC+TCOoo81y95GFpOi3S4YVj9eznQfh7i7N0465neM89cYAPnZDzYHzrhq4PrwDDm17xE9oquJ91WGrzmiPXeh4acuSOR04d0kCMDN/XJLroCjuRGKJudR6HN6WkO53qV9bErtYhxRUetIFwd2InfkrTsZ+SmK/LzQEJJNI9nfH+mHfJc+qfnY4vNUqzCUZwFi354T992caqFKKSYN1kYzPhKoF91ijp92zLECQKUCV78MyAMuCeBCRBd00rv9MxulV5gLosIcG5NsBS8zDk+e6hjB0aAXeegsagz5GoEwW1jzJhMcMAXK2Yba3pK9sb5KSjJ5yYrjyt7sx3E87m3sPU=
+  on:
+    all_branches: true
+    tags: true
+    repo: pspeter3/tsfind
