@@ -31,7 +31,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Asana/tsfind.git"
+    "url": "https://github.com/pspeter3/tsfind.git"
   },
   "keywords": [
     "typescript"
@@ -39,9 +39,9 @@
   "author": "Asana",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Asana/tsfind/issues"
+    "url": "https://github.com/pspeter3/tsfind/issues"
   },
-  "homepage": "https://github.com/Asana/tsfind",
+  "homepage": "https://github.com/pspeter3/tsfind",
   "dependencies": {
     "glob": "^5.0.6",
     "minimist": "^1.1.1"
