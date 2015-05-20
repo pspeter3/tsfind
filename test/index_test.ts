@@ -3,7 +3,7 @@ import index = require("../src/index");
 
 suite("Index", () => {
     test("name", () => {
-        chai.assert.equal(index.name, "typescript-starter");
+        chai.assert.equal(index.name, "tsproject");
     });
 
     test("parent", () => {
