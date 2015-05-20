@@ -12,10 +12,19 @@
       "commit": "66d8808c98856feae7d5a2d5acfc955110fb126d"
     },
     "node/node.d.ts": {
-      "commit": "66d8808c98856feae7d5a2d5acfc955110fb126d"
+      "commit": "c1dcab7dc47e2abbe5bdf560f8129f4fa44d5ae9"
     },
     "sinon/sinon.d.ts": {
       "commit": "66d8808c98856feae7d5a2d5acfc955110fb126d"
+    },
+    "glob/glob.d.ts": {
+      "commit": "c1dcab7dc47e2abbe5bdf560f8129f4fa44d5ae9"
+    },
+    "minimatch/minimatch.d.ts": {
+      "commit": "c1dcab7dc47e2abbe5bdf560f8129f4fa44d5ae9"
+    },
+    "minimist/minimist.d.ts": {
+      "commit": "c1dcab7dc47e2abbe5bdf560f8129f4fa44d5ae9"
     }
   }
 }

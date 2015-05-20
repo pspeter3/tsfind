@@ -1,0 +1,22 @@
+{
+    "version": "1.4.1",
+    "compileOnSave": false,
+    "filesGlob": [
+        "./**/*.ts",
+        "!./build/**/*.ts",
+        "!./node_modules/**/*.ts"
+    ],
+    "files": [
+        "./src/index.ts",
+        "./test/index_test.ts",
+        "./typings/chai/chai.d.ts",
+        "./typings/glob/glob.d.ts",
+        "./typings/minimatch/minimatch.d.ts",
+        "./typings/minimist/minimist.d.ts",
+        "./typings/mocha/mocha.d.ts",
+        "./typings/node/node.d.ts",
+        "./typings/sinon/sinon.d.ts",
+        "./typings/tsd.d.ts"
+    ],
+    "compilerOptions": {}
+}
