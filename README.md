@@ -18,8 +18,10 @@ through the command line interface.
 ### CLI Options
 
 ```
---tsconfig {string}            The path to the tsconfig. Defaults to "cwd/tsconfig.json"
---glob     {string | string[]} The glob pattern to use. Will use the "filesGlob" key in tsconfig if not specified.
+--tsconfig {string}            
+    The path to the tsconfig. Defaults to "cwd/tsconfig.json"
+--glob     {string | string[]} 
+    The glob pattern to use. Will use the "filesGlob" key in tsconfig if not specified.
 ```
 
 All additional files passed in will be explicitly used.
