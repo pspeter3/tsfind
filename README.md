@@ -2,39 +2,27 @@
 
 [![NPM Version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage][coveralls-image]][coveralls-url]
 
-Maintain a tsconfig file
+Find TypeScript files for tsconfig
+
+## Installation
+
+```sh
+npm install tsfind --save-dev
+```
 
 ## Usage
 
-This repository is meant to be forked and kept as another git remote so future
-changes can be merged in. The developer should replace all instances of
-`tsfind` with their package name and change the appropriate fields
-in the `package.json`.
+`tsfind` can be used programatically but is meant to be used with primarily
+through the command line interface.
 
-## Commands
+### CLI Options
 
-The default is to use simple npm scripts instead of `gulp` or `grunt` because
-it is easier to understand for new developers and reduces the devDependencies.
-The `npm run` supports the following commands.
+```
+--tsconfig {string}            The path to the tsconfig. Defaults to "cwd/tsconfig.json"
+--glob     {string | string[]} The glob pattern to use. Will use the "filesGlob" key in tsconfig if not specified.
+```
 
-- **prebundle** Automatically run before `bundle`. Compiles the TypeScript and
-  moves the files in source into the current working directory.
-- **bundle** Generates a master dts file for the package from `index.d.ts`.
-- **clean** Removes `build`, `coverage`, and artifacts from `bundle`.
-- **precompile** Automatically run before `compile`. Runs `clean`.
-- **compile** Compiles the TypeScript.
-- **coveralls** Sends code coverage information to Coveralls.
-- **lint** Runs `tslint` on all of the files.
-- **setup** Removes `node_modules` and `typings` and then runs `npm install` and
-  `npm run typings`
-- **pretest** Automatically run before `test`. Compiles and modifies the
-  compiled JavaScript for sourcemap support and coverage.
-- **test** Runs mocha with istanbul code coverage. Set `$MOCHA_REPORTER` to
-  override which reporter is used in tests.
-- **posttest** Automatically run after `test`. Checks the code coverage and will
-  fail if the code coverage is not sufficient. Also runs `lint`.
-- **typings** Installs the type definitions.
-- **update** Merges from origin master and then runs `npm run setup`.
+All additional files passed in will be explicitly used.
 
 ## Contributing
 
@@ -42,7 +30,7 @@ Feel free to fork and submit pull requests for the configuration. For a sanity
 check:
 
 ```sh
-git clone git@github.com:Asana/tsfind.git
+git clone git@github.com:pspeter3/tsfind.git
 cd tsfind
 npm install
 npm run typings

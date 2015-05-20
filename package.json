@@ -1,7 +1,7 @@
 {
   "name": "tsfind",
   "version": "0.0.1",
-  "description": "A starter project for TypeScript libraries",
+  "description": "Find TypeScript files for tsconfig",
   "main": "index.js",
   "bin": {
     "tsfind": "./tsfind"
